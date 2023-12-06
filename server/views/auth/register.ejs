@@ -1,0 +1,107 @@
+<!-- CSS files -->
+<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+<script src="/Scripts/app.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/jquery/dist/jquery/min.js"></script>
+
+<!--Navigation Bar for Add button-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Assignment Tracker</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<main class="container">
+    <!--Message Area-->
+    <% if (message.lenth > 0) { %>
+    <div class="alert alter-danger">
+        <%= message %>
+    </div>
+    <% } %>
+
+    <div class="row">
+        <div class="offset-md-4 col-md-4">
+            <h1>Please Register</h1>
+            <br>
+            <form method="post" autocomplete="off">
+                <fieldset class="form-group">
+                    <label for="username"></label>
+                    <input type="text" class="form-control"
+                    name="username" 
+                    placeholder="Enter username"
+                    id="username" required autofocus>
+                </fieldset>
+                <br>
+                <fieldset class="form-group">
+                    <label for="password"></label>
+                    <input type="password" class="form-control"
+                    name="password" 
+                    placeholder="Enter password"
+                    id="password" required>
+                </fieldset>
+                <br>
+                <fieldset class="form-group">
+                    <label for="email"></label>
+                    <input type="email" class="form-control"
+                    name="email" 
+                    placeholder="Enter Email Address"
+                    id="email" required>
+                </fieldset>
+                <br>
+                <fieldset class="form-group">
+                    <label for="displayName"></label>
+                    <input type="text" class="form-control"
+                    name="displayName" 
+                    placeholder="Enter display name"
+                    id="displayName" required>
+                </fieldset>
+                <br>
+                <fieldset class="form-group text-right">
+                    <input type="submit" class="btn btn-success"
+                    value="Register">
+                    <a href="/">
+                        <input type="button" class="btn btn-warning" value="Cancel">
+                    </a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</main>
+
+
+  <!-- Fixed Footer -->
+  <footer class="footer">
+    <h3>Thank you for visiting my page</h3>
+    <p>You can reach me at <a href="mailto:saaketh.potluri@ontariotechu.net">saaketh.potluri@ontariotechu.net</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/saaketh-potluri-a76a2b272/"><i class="fa-brands fa-linkedin">&nbsp;&nbsp;</i>https://www.linkedin.com/in/saaketh-potluri-a76a2b272/</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Saaketh01"><i class="fa-brands fa-github fa-lg"></i>&nbsp; https://github.com/Saaketh01</a></p>
+  </footer>
+</body>
+</html>
+
+<!--Styling for Register Page -->
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+  }
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+</style>
+<!--End of Styling for Register Page -->
